@@ -9,6 +9,7 @@ env:
   MONGODB_NAME: gha-demo
 jobs:
   test:
+    environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: gha-demo-onw.byhrq.mongodb.net
       MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
